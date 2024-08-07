@@ -93,7 +93,7 @@ body{
     line-height: 4rem;
 }
 .home-text p{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .home-btn{
     padding: 15px 45px;
@@ -162,5 +162,38 @@ body{
     }
     .home-img{
         width: 125%;
+    }
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem; /* Adjusted gap if needed */
+    }
+    
+    .navigation i {
+        display: none; /* Hide the search icon if it still exists in some browsers */
+    }    
+    .logo {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    
+    .logo .red {
+        color: var(--red);
+    }
+    
+    .navigation .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigation .logo span {
+        color: var(--dark);
+    }
+    
+    /* Aumentar a responsividade para que o logo não quebre o layout */
+    @media (max-width: 785px) {
+        .navigation .logo {
+            font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+        }
     }
 }
